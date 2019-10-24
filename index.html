@@ -95,8 +95,8 @@ background: #fff;
 overflow-y: scroll;
 margin-bottom: 25px;
 }
-.force-overflow {
-min-height: 450px;
+.pb-5{
+    padding-bottom: 1rem !important;
 }
 
 .scrollbar-primary::-webkit-scrollbar {
@@ -107,6 +107,78 @@ background-color: #F5F5F5; }
 border-radius: 10px;
 -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 background-color: #4285F4; }
+
+.card{
+    margin-bottom: 1rem !important;
+}
+
+
+
+@media (max-width: 568px) {
+    .card-body:nth-child(4){
+        flex: 0 0 0;
+    margin-left: -10rem !important;
+}
+
+.map{
+    padding-bottom: 1rem;
+}
+
+.col-10{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.scrollbar{
+    margin: 0 auto;
+    flex: 0 0 100%;
+}
+
+.col-8{
+    flex: 0 0 50%;
+}
+
+.col-4{
+    position: absolute;
+    top: 57%;
+    left: 20%;
+}
+.text-muted p{
+    line-height: .5rem;
+}
+}
+
+@media (max-width: 768px){
+    .map{
+    padding-bottom: 1rem;
+}
+
+.col-10{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.scrollbar{
+    margin: 0 auto;
+    flex: 0 0 60%;
+}
+}
+
+@media (max-width: 1240px){
+    .map{
+    padding-bottom: 1rem;
+}
+
+.col-10{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.scrollbar{
+    margin: 0 auto;
+    flex: 0 0 30%;
+} 
+}
     </style>
 </head>
 <body>
@@ -197,7 +269,7 @@ background-color: #4285F4; }
                 </nav>
                 <div class="col main p-3 text-white" style="background:#1A73E8;">
                     <div class="col">
-                        <h1 style="font-size: 35px">Welcome back Admin</h1>
+                        <h1 style="font-size: 2rem">Welcome back Admin</h1>
                         <h6 class="pt-2">CAR PARK APPLICATION </h6>
                     </div>
                 </div>
