@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <style>
+        body{
+            overflow-x: hidden;
+        }
         #body-row {
             margin-left:0;
             margin-right:0;
@@ -86,6 +89,13 @@
             text-align: center;
         }
  
+ .details{
+     margin: 1.5rem 0 auto;
+ }
+
+ a .card {
+    margin: 0 auto;
+}
 
 .scrollbar {
 margin-left: 30px;
@@ -285,39 +295,47 @@ background-color: #4285F4; }
                             <a class="nav-link text-muted" href="#">Demographics</a>
                         </nav>
                 </div>
-                <div class="col main p-0 mt-4 d-flex">
-                        <div class="col d-flex flex-wrap p-3 ml-4 justify-content-center">
-                            <a href="#" class="card  mr-5" style="width: 15rem; background-color: #EAEAEA; text-decoration: none;">
-                                <div class="card-body p-0" style="color: black; background-color: #fff; text-align: center;">
-                                    <h5 class="card-title text-muted pt-2">New Users</h5>
-                                    <p class="card-text pb-2 border-top pt-2" style="font-size: 40px; font-weight: 500;">20</p>
-                                    <div class="card-footer pb-5" style="background-color: #EAEAEA;"></div>
-                                </div>
-                            </a>
-                            <a href="#" class="card mr-5" style="width: 15rem; text-decoration: none;">
-                                <div class="card-body p-0" style="text-align: center;">
-                                    <h5 class="card-title text-muted pt-2">Exisiting Users</h5>
-                                    <p class="card-text pb-2 border-top pt-2" style="color: orange; font-size:40px; font-weight: 500;">8</p>
-                                    <div class="card-footer pb-5 " style="background-color: #EAEAEA;"></div>
-                                </div>
-                            </a>
-                            <a href="#" class="card mr-5 " style="width: 15rem; text-decoration: none;">
-                                <div class="card-body p-0" style="text-align: center;">
-                                    <h5 class="card-title pt-2 text-muted">Issues</h5>
-                                    <p class="card-text pb-2 border-top pt-2" style="color: red; font-size:40px; font-weight: 500;">8</p>
-                                    <div class="card-footer pb-5" style="background-color: #EAEAEA;"></div>
-                                </div>
-                            </a>
-                            <a href="#" class="card" style="width: 15rem; text-align: center; text-decoration: none;">
-                                <div class="card-body p-0">
-                                    <h5 class="card-title text-muted pt-2">Car Park</h5>
-                                    <p class="card-text pb-2 border-top pt-2" style="color: purple; font-size:40px; font-weight: 500;">20</p>
-                                    <div class="card-footer pb-5" style="background-color: #EAEAEA;"></div>
-                                </div>
-                            </a>
+                <div class="row details">
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                                <a href="#" class="card shadow mr-5" style=" background-color: #EAEAEA; text-decoration: none;">
+                                        <div class="card-body p-0" style="color: black; background-color: #fff; text-align: center;">
+                                            <h5 class="card-title text-muted pt-2">New Users</h5>
+                                            <p class="card-text pb-2 border-top pt-2" style="font-size: 40px; font-weight: 500;">20</p>
+                                            <div class="card-footer pb-5" style="background-color: #EAEAEA;"></div>
+                                        </div>
+                                    </a>
                         </div>
-                        
-                    </div>
+            
+                        <div class="col-xl-3 col-md-6 mb-4">
+                                <a href="#" class="card shadow mr-5" style=" text-decoration: none;">
+                                        <div class="card-body p-0" style="text-align: center;">
+                                            <h5 class="card-title text-muted pt-2">Exisiting Users</h5>
+                                            <p class="card-text pb-2 border-top pt-2" style="color: orange; font-size:40px; font-weight: 500;">8</p>
+                                            <div class="card-footer pb-5 " style="background-color: #EAEAEA;"></div>
+                                        </div>
+                                    </a>
+                        </div>
+            
+                        <div class="col-xl-3 col-md-6 mb-4">
+                                <a href="#" class="card shadow mr-5" style="text-decoration: none;">
+                                        <div class="card-body p-0" style="text-align: center;">
+                                            <h5 class="card-title pt-2 text-muted">Issues</h5>
+                                            <p class="card-text pb-2 border-top pt-2" style="color: red; font-size:40px; font-weight: 500;">8</p>
+                                            <div class="card-footer pb-5" style="background-color: #EAEAEA;"></div>
+                                        </div>
+                                    </a>
+                        </div>
+            
+                        <div class="col-xl-3 col-md-6 mb-4">
+                                <a href="#" class="card shadow mr-5" style="text-align: center; text-decoration: none;">
+                                        <div class="card-body p-0">
+                                            <h5 class="card-title text-muted pt-2">Car Park</h5>
+                                            <p class="card-text pb-2 border-top pt-2" style="color: purple; font-size:40px; font-weight: 500;">20</p>
+                                            <div class="card-footer pb-5" style="background-color: #EAEAEA;"></div>
+                                        </div>
+                                    </a>
+                        </div>
                     <div class="col card">
                         <h2 class="section-heading pt-4 text-muted">Car Park Locations</h2>
                         <div class="d-flex flex-wrap justify-content-evenly">
