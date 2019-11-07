@@ -253,6 +253,24 @@
             display: block;
         }
 
+        .header-links buttun .bt-link{
+            color: #fff !important;
+            text-decoration: none !important;
+        }
+
+        .header-links .btn-link:hover {
+        color: #fff !important;
+         text-decoration: underline;
+}
+
+.header-links .btn{
+    color: ;
+}
+
+.header-links .btn-link{
+    color: white;
+}
+
         @media (max-width: 1400px){
             .or{
                display: none;
@@ -743,8 +761,8 @@
                     <div class="left">
                             <div class="header-links">
                                     <button type="button" class="btn btn-light" id="past">Past booking</button>
-                                    <button type="button" class="btn btn-light" id="current" >Current booking</button>
-                                    <button type="button" class="btn btn-light" id="cancel">Cancelled booking</button>
+                                    <button type="button" class="btn btn-link active" id="current" >Current booking</button>
+                                    <button type="button" class="btn btn-link" id="cancel">Cancelled booking</button>
         
                             </div>
                         </div>
@@ -764,7 +782,7 @@
         
     
     <!-- past booking section -->
-    <div class="main" id="main">
+    <div class="visible" id="pastBooking-section">
         <div class="row">
             <div class="col-md-12 title spacing">
                 <div class="border">
@@ -921,145 +939,148 @@
                                     </div>
                         </div>
                     </div>
-<!-- end of past booking section -->
-
-<!-- current booking section -->
-
-<div class="row">
-        <div class="col-md-12 spacing">
-            <div class="border">
-        <h3 class=" section-title"><strong>Current Booking</strong></h3>
     </div>
-        </div>
-    </div>
+    <!-- end of past booking section -->
 
-    <div class="row">
-            <div class="col-md-12 spacing">
-                    <div class="section-center border">
-                            <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <p>Fri, 28 Sep 2019</p>
-                                </div>
-                                <div class="col-md-4 adjust">
-                                    <p>Parking lot: 7</p>
-                                </div>
-                                <div class="col-md-4 adjust">
-                                    <button type="button" class="btn btn-link">Hide details</button>
-                                    <button type="button" class="btn btn-primary">Rebook</button>
-                                </div>
-                            </div>
-                
-                            <div class="row" style="padding:2rem 0">
-                                <div class="col-md-4">
-                                    <p>From</p>
-                                    <div class="row" style="font-size: .9rem;">
-                                        <div class="col-md-5 border date">
-                                            <p><i class="fas fa-calendar"></i><strong>Wed, Oct 23</strong></p>
-                                        </div>
-                                        <div class="col-md-1"></div>
-                                        <div class="col-md-5 border date">
-                                            <p><i class="far fa-clock"></i><strong>8:00am</strong></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="or" style="margin-top: 3rem;">
-                                        <hr class="bar">
-                                        <span>4 hrs</span>
-                                        <hr class="bar">
-                                    </div>
-                        </div>
-                                <div class="col-md-4">
-                                    <p>To</p>
-                                    <div class="row" style="font-size: .9rem;">
-                                        <div class="col-md-5 border" style="padding: 1rem 0 0 1rem">
-                                            <p><i class="fas fa-calendar" style="padding-right: 1rem; color: #1A73E8"></i><strong>Wed,
-                                                    Oct 23</strong></p>
-                                        </div>
-                                        <div class="col-md-1"></div>
-                                        <div class="col-md-5 border" style="padding: 1rem 0 0 1.5rem">
-                                            <p><i class="far fa-clock"
-                                                    style="padding-right: 1rem; color: #1A73E8"></i><strong>8:00am</strong></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                
-                
-                    </div>
-                    <div class="border" style="padding: 1rem 3rem 0;">
-                            <p style="font-size: 1.2rem; "> Plate Number: ABC-123DE </p>
-                        </div>
-            </div>
-
-            
-            
-    </div>
-
-    <div class="row">
-            <div class="col-md-12 spacing">
-                <div class="border inner">
-                    <div >
-                            <div class="row">
-                                    <div class="col-md-6">
-                                        <p><strong>Total</strong></p>
-                                    </div>
-                    
-                                    <div class="col-md-6 adjust2">
-                                        <span class="amount" style="color: #42E11A;">₦1,000</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 trash">
-                                        <p><i class="fas fa-trash-alt" style="font-size: 1.5rem; color: #E5201C;"></i></p>
-                                    </div>
-                    
-                                    <div class="col-md-6 adjust2">
-                                        <button type="button" class="btn btn-danger">Cancel booking</button>
-                                    </div>
-                                </div>
-                    </div>
-                        
-        </div>
-            </div>
-        </div>
-
+    <!-- current booking section -->
+    <div class="hidden" id="currentBooking-section">
         <div class="row">
-                <div class="col-md-12 spacing">
-                        <div class="border inner">
-                                <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <p>Fri, 28 Sep 2019</p>
+            <div class="col-md-12 spacing">
+                <div class="border">
+                    <h3 class=" section-title"><strong>Current Booking</strong></h3>
+                </div>
+            </div>
+        </div>
+        
+            <div class="row">
+                    <div class="col-md-12 spacing">
+                            <div class="section-center border">
+                                    <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p>Fri, 28 Sep 2019</p>
+                                        </div>
+                                        <div class="col-md-4 adjust">
+                                            <p>Parking lot: 7</p>
+                                        </div>
+                                        <div class="col-md-4 adjust">
+                                            <button type="button" class="btn btn-link">Hide details</button>
+                                            <button type="button" class="btn btn-primary">Rebook</button>
+                                        </div>
                                     </div>
-                                    <div class="col-md-4 adjust">
-                                        <p>Parking lot: 7</p>
+                        
+                                    <div class="row" style="padding:2rem 0">
+                                        <div class="col-md-4">
+                                            <p>From</p>
+                                            <div class="row" style="font-size: .9rem;">
+                                                <div class="col-md-5 border date">
+                                                    <p><i class="fas fa-calendar"></i><strong>Wed, Oct 23</strong></p>
+                                                </div>
+                                                <div class="col-md-1"></div>
+                                                <div class="col-md-5 border date">
+                                                    <p><i class="far fa-clock"></i><strong>8:00am</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                                <div class="or" style="margin-top: 3rem;">
+                                                    <hr class="bar">
+                                                    <span>4 hrs</span>
+                                                    <hr class="bar">
+                                                </div>
                                     </div>
-                                    <div class="col-md-4 adjust">
-                                        <button type="button" class="btn btn-link">View details</button>
-                                        <button type="button" class="btn btn-primary">Rebook</button>
+                                        <div class="col-md-4">
+                                            <p>To</p>
+                                            <div class="row" style="font-size: .9rem;">
+                                                <div class="col-md-5 border" style="padding: 1rem 0 0 1rem">
+                                                    <p><i class="fas fa-calendar" style="padding-right: 1rem; color: #1A73E8"></i><strong>Wed,
+                                                            Oct 23</strong></p>
+                                                </div>
+                                                <div class="col-md-1"></div>
+                                                <div class="col-md-5 border" style="padding: 1rem 0 0 1.5rem">
+                                                    <p><i class="far fa-clock"
+                                                            style="padding-right: 1rem; color: #1A73E8"></i><strong>8:00am</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                        
+                        
                             </div>
-                </div>
+                            <div class="border" style="padding: 1rem 3rem 0;">
+                                    <p style="font-size: 1.2rem; "> Plate Number: ABC-123DE </p>
+                                </div>
+                    </div>
+        
+                    
+                    
             </div>
-        <!-- end of current booking section -->
-        <div class="row mt-5">
-                <div class="col-md-12 spacing">
-                    <div class="border">
-                        <div class="text-center" style="margin-top: 1rem; padding:4rem 0">
-                                
-                                        <h1 style=> <strong>Sorry!</strong></h1>
-                                        <p>You do not have any reservations available on this page</p>
-                                        <button type="button" class="btn btn-primary " style="width: 10rem">Book Now</button>
-                                    
-                        </div>
+        
+            <div class="row">
+                    <div class="col-md-12 spacing">
+                        <div class="border inner">
+                            <div >
+                                    <div class="row">
+                                            <div class="col-md-6">
+                                                <p><strong>Total</strong></p>
+                                            </div>
                             
-            </div>
+                                            <div class="col-md-6 adjust2">
+                                                <span class="amount" style="color: #42E11A;">₦1,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 trash">
+                                                <p><i class="fas fa-trash-alt" style="font-size: 1.5rem; color: #E5201C;"></i></p>
+                                            </div>
+                            
+                                            <div class="col-md-6 adjust2">
+                                                <button type="button" class="btn btn-danger">Cancel booking</button>
+                                            </div>
+                                        </div>
+                            </div>
+                                
+                </div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                        <div class="col-md-12 spacing">
+                                <div class="border inner">
+                                        <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <p>Fri, 28 Sep 2019</p>
+                                            </div>
+                                            <div class="col-md-4 adjust">
+                                                <p>Parking lot: 7</p>
+                                            </div>
+                                            <div class="col-md-4 adjust">
+                                                <button type="button" class="btn btn-link">View details</button>
+                                                <button type="button" class="btn btn-primary">Rebook</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+    </div>
+    <!-- end of current booking section -->
+
+            <!--  cancel booking section -->
+            <div class="hidden" id="cancelBooking-section">
+                <div class="row mt-5">
+                    <div class="col-md-12 spacing">
+                        <div class="border">
+                            <div class="text-center" style="margin-top: 1rem; padding:4rem 0">
+                                <h1 style=> <strong>Sorry!</strong></h1>
+                                    <p>You do not have any reservations available on this page</p>
+                                    <button type="button" class="btn btn-primary " style="width: 10rem">Book Now</button>         
+                            </div>              
+                        </div>
+                    </div>
                 </div>
             </div>
-        <!-- cancel booking section -->
+        <!--  end of cancel booking section -->
     </div>
      
     <div class="row py-5 mt-5 footer-row" style="background: #3684EB">
@@ -1109,9 +1130,9 @@
             </div>
         </div>
         <script>
-                const pastBookingDiv = document.getElementById ('main');
-                const currentBookingDiv = document.getElementById ('current-booking');
-                const cancelBookingDiv = document.getElementById ('cancel-booking');
+                const pastBookingDiv = document.getElementById ('pastBooking-section');
+                const currentBookingDiv = document.getElementById ('currentBooking-section');
+                const cancelBookingDiv = document.getElementById ('cancelBooking-section');
         
                 const pastBookingBtn = document.getElementById ('past');
                 const currentBookingBtn = document.getElementById ('current');
@@ -1120,20 +1141,43 @@
                 pastBookingBtn.onclick = function (){
                     currentBookingDiv.classList.add('hidden')
                     cancelBookingDiv.classList.add('hidden');
+                    pastBookingDiv.classList.remove('hidden');
+                    pastBookingDiv.classList.add('visible');
+                    pastBookingBtn.classList.remove('btn-link');
+                    pastBookingBtn.classList.add('btn-light');
+                    currentBookingBtn.classList.remove('btn-light');
+                    currentBookingBtn.classList.add('btn-link');
+                    cancelBookingBtn.classList.remove('btn-light');
+                    cancelBookingBtn.classList.add('btn-link');
                     console.log("past booking clicked");
                 };
         
                 currentBookingBtn.onclick = function (){
+                    pastBookingDiv.classList.remove('visible');
                     pastBookingDiv.classList.add('hidden');
                     cancelBookingDiv.classList.add('hidden');
                     currentBookingDiv.classList.remove('hidden');
+                    currentBookingDiv.classList.add('visible');
+                    pastBookingBtn.classList.remove('btn-light');
+                    pastBookingBtn.classList.add('btn-link');
+                    currentBookingBtn.classList.remove('btn-link');
+                    currentBookingBtn.classList.add('btn-light');
                     console.log("current booking clicked");
                 };
         
                 cancelBookingBtn.onclick = function (){
+                    pastBookingDiv.classList.remove('visible');
                     pastBookingDiv.classList.add('hidden');
+                    currentBookingDiv.classList.remove('visible');
                     currentBookingDiv.classList.add('hidden');
                     cancelBookingDiv.classList.remove('hidden');
+                    cancelBookingDiv.classList.add('visible');
+                    pastBookingBtn.classList.remove('btn-light');
+                    pastBookingBtn.classList.add('btn-link');
+                    currentBookingBtn.classList.remove('btn-light');
+                    currentBookingBtn.classList.add('btn-link');
+                    cancelBookingBtn.classList.remove('btn-link');
+                    cancelBookingBtn.classList.add('btn-light');
                     console.log("cancel booking clicked");
                 };
                 </script>
